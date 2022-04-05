@@ -62,7 +62,7 @@ aside {
     font-size: 30px;
 }
 
-.main-logo {
+.logo {
     height: 3.5rem;
     width: 3.5rem;
 }
@@ -85,13 +85,13 @@ main {
     grid-area: cards;
     display: grid;
     gap: 15px;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 1fr 350px;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "projects announcements"
     "projects trending"
     ;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .projects-title {
@@ -104,31 +104,38 @@ main {
 
 .card-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 1rem;
     min-height: auto;
 }
 
 .card {
     background-color: #FFFFFF;
-    min-width: 300px;
-    min-height: 200px;
+    min-height: 250px;
     padding: 1rem;
     border-radius: 6px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .projects {
+    display: flex;
+    flex-direction: column;
     border-left: 6px #F0B429 solid;
 }
 
-.card-wrapper p {
+.projects h3 {
+    margin-bottom: .5rem;
+}
+
+.projects p {
     color: #909090;
+    margin-bottom: 1rem;
 }
 
 .icon-wrapper {
+    margin-top: auto;
     display: flex;
     justify-content: end;
     gap: 1rem;
@@ -136,6 +143,7 @@ main {
 
 .announcements-wrapper {
     grid-area: announcements;
+    min-width: 250px;
 }
 
 .trending-wrapper {
