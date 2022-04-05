@@ -10,8 +10,8 @@ html {
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    max-height: 100vh;
     display: grid;
-    gap: 15px;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
     grid-template-areas: 
@@ -30,26 +30,24 @@ ul {
 
 header {
     grid-area: header;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 .header-top {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .header-bottom {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 aside {
     grid-area: sidebar;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
+    /* grid-template-rows: 1fr 1fr; */
+    /* justify-content: center; */
+    /* align-items: center; */
     gap: 30px;
     background-color: #1992D4;
     color: #FFFFFF;
@@ -58,21 +56,32 @@ aside {
 .sidebar-title {
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding: 20px;
+    margin: 2rem 1rem 2rem 1.3rem;
+    gap: 10px;
+    /* padding: 20px; */
     font-size: 30px;
 }
 
 .main-logo {
-    height: 48px;
-    width: 48px;
+    height: 3.5rem;
+    width: 3.5rem;
 }
 
-.app-features, .settings {
-    margin-left: 1rem;
+.nav__link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 1rem 1rem 1rem 3rem;
+}
+
+#communities {
+    margin-bottom: 2.5rem;
 }
 
 main {
+    background-color: #E2E8F0;
     grid-area: cards;
     display: grid;
     gap: 15px;
@@ -82,12 +91,11 @@ main {
     "projects announcements"
     "projects trending"
     ;
+    padding: 1rem;
 }
 
-.cards {
-    min-width: 400px;
-    height: auto;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+.projects-title {
+    margin-left: 1rem;
 }
 
 .projects-wrapper {
@@ -98,6 +106,32 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    min-height: auto;
+}
+
+.card {
+    background-color: #FFFFFF;
+    min-width: 300px;
+    min-height: 200px;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.projects {
+    border-left: 6px #F0B429 solid;
+}
+
+.card-wrapper p {
+    color: #909090;
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
 }
 
 .announcements-wrapper {

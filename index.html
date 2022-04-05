@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Admin Dashboard</title>
 </head>
@@ -14,7 +17,9 @@
                 <input type="search">
                 <button type="submit">Search</button>
             </form>
-            <img class="icon -notification" src="" alt="A notification icon">
+            <span class="material-icons-outlined">
+                notifications_active
+                </span>
             <img class="icon profile-pic" src="" alt="Your profile picture">
             <p>Morgan Oakley</p>
         </div>
@@ -27,98 +32,75 @@
         </div>
     </header>
     <aside>
-        <h1 class="sidebar-title">
-            <img class="main-logo" src="imgs/dashboard-logo.png" alt="Four uneven squares in shape of larger square">
-            Dashboard
-        </h1>
-        <div class="app-features">
-            <ul>
-                <li>
-                    <h2><span><img src="imgs/home.png" alt="Home icon"></span>Home</h2>
-                </li>
-                <li>
-                    <h2>Profile</h2>
-                </li>
-                <li>
-                    <h2>Messages</h2>
-                </li>
-                <li>
-                    <h2>History</h2>
-                </li>
-                <li>
-                    <h2>Tasks</h2>
-                </li>
-                <li>
-                    <h2>Communities</h2>
-                </li>
-                <li>
-                    <h2>Settings</h2>
-                </li>
-                <li>
-                    <h2>Support</h2>
-                </li>
-                <li>
-                    <h2>Privacy</h2>
-                </li>
-            </ul>
+        <div class="navbar">
+            <h1 class="sidebar-title"><img class="main-logo" src="imgs/dashboard-logo.png" alt="Four uneven squares in shape of larger square">Dashboard</h1>
+            <a class="nav__link"><span class="material-icons">home</span>Home</a>
+            <a class="nav__link"><span class="material-icons">account_circle</span>Profile</a>
+            <a class="nav__link"><span class="material-icons">mode_comment</span>Messages</a>
+            <a class="nav__link"><span class="material-icons">watch_later</span>History</a>
+            <a class="nav__link"><span class="material-icons">file_copy</span>Tasks</a>
+            <a class="nav__link" id="communities"><span class="material-icons">groups</span>Communities</a>
+            <a class="nav__link"><span class="material-icons">settings</span>Settings</a>
+            <a class="nav__link"><span class="material-icons">help_center</span>Support</a>
+            <a class="nav__link"><span class="material-icons">verified_user</span>Privacy</a>
         </div>
     </aside>
     <main>
         <div class="projects-wrapper">
-            <h3>Your Projects</h3>
+            <h3 class="projects-title">Your Projects</h3>
             <div class="card-wrapper">
                 <div class="card projects">
                     <h3>Super Cool Project</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque laborum, accusamus perferendis dolor voluptates voluptatibus quibusdam, at culpa ipsum minus quam autem error. Animi aliquam ipsa quia in numquam nihil.</p>
                     <div class="icon-wrapper">
-                        <img class="icon -favorite" src="" alt="Favorite project icon">
-                        <img class="icon -follow" src="" alt="Follow project icon">
-                        <img class="icon -share" src="" alt="Share project icon">
+                        <span class="material-icons">star_outline</span>
+                        <span class="material-icons">add</span>
+                        <span class="material-icons">share</span>
                     </div>
                 </div>
                 <div class="card projects">
                     <h3>Less Cool Project</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque laborum, accusamus perferendis dolor voluptates voluptatibus quibusdam, at culpa ipsum minus quam autem error. Animi aliquam ipsa quia in numquam nihil.</p>
                     <div class="icon-wrapper">
-                        <img class="icon -favorite" src="" alt="Favorite project icon">
-                        <img class="icon -follow" src="" alt="Follow project icon">
-                        <img class="icon -share" src="" alt="Share project icon">
+                        <span class="material-icons">star_outline</span>
+                        <span class="material-icons">add</span>
+                        <span class="material-icons">share</span>
                     </div>
                 </div>
                 <div class="card projects">
                     <h3>Impossible App</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque laborum, accusamus perferendis dolor voluptates voluptatibus quibusdam, at culpa ipsum minus quam autem error. Animi aliquam ipsa quia in numquam nihil.</p>
                     <div class="icon-wrapper">
-                        <img class="icon -favorite" src="" alt="Favorite project icon">
-                        <img class="icon -follow" src="" alt="Follow project icon">
-                        <img class="icon -share" src="" alt="Share project icon">
+                        <span class="material-icons">star_outline</span>
+                        <span class="material-icons">add</span>
+                        <span class="material-icons">share</span>
                     </div>
                 </div>
                 <div class="card projects">
                     <h3>Easy Peasy App</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque laborum, accusamus perferendis dolor voluptates voluptatibus quibusdam, at culpa ipsum minus quam autem error. Animi aliquam ipsa quia in numquam nihil.</p>
                     <div class="icon-wrapper">
-                        <img class="icon -favorite" src="" alt="Favorite project icon">
-                        <img class="icon -follow" src="" alt="Follow project icon">
-                        <img class="icon -share" src="" alt="Share project icon">
+                        <span class="material-icons">star_outline</span>
+                        <span class="material-icons">add</span>
+                        <span class="material-icons">share</span>
                     </div>
                 </div>
                 <div class="card projects">
                     <h3>Ad Blocker</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque laborum, accusamus perferendis dolor voluptates voluptatibus quibusdam, at culpa ipsum minus quam autem error. Animi aliquam ipsa quia in numquam nihil.</p>
                     <div class="icon-wrapper">
-                        <img class="icon -favorite" src="" alt="Favorite project icon">
-                        <img class="icon -follow" src="" alt="Follow project icon">
-                        <img class="icon -share" src="" alt="Share project icon">
+                        <span class="material-icons">star_outline</span>
+                        <span class="material-icons">add</span>
+                        <span class="material-icons">share</span>
                     </div>
                 </div>
                 <div class="card projects">
                     <h3>Money Maker</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque laborum, accusamus perferendis dolor voluptates voluptatibus quibusdam, at culpa ipsum minus quam autem error. Animi aliquam ipsa quia in numquam nihil.</p>
                     <div class="icon-wrapper">
-                        <img class="icon -favorite" src="" alt="Favorite project icon">
-                        <img class="icon -follow" src="" alt="Follow project icon">
-                        <img class="icon -share" src="" alt="Share project icon">
+                        <span class="material-icons">star_outline</span>
+                        <span class="material-icons">add</span>
+                        <span class="material-icons">share</span>
                     </div>
                 </div>
             </div>
