@@ -1,0 +1,109 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar cards"
+    ;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    grid-area: header;
+}
+
+.header-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside {
+    grid-area: sidebar;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #1992D4;
+    color: #FFFFFF;
+}
+
+.sidebar-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.main-logo {
+    height: 48px;
+    width: 48px;
+}
+
+.app-features, .settings {
+    margin-left: 1rem;
+}
+
+main {
+    grid-area: cards;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "projects announcements"
+    "projects trending"
+    ;
+}
+
+.cards {
+    min-width: 400px;
+    height: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.projects-wrapper {
+    grid-area: projects;
+}
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.announcements-wrapper {
+    grid-area: announcements;
+}
+
+.trending-wrapper {
+    grid-area: trending;
+}
